@@ -5,7 +5,7 @@ Library  ExtendedSelenium2Library
 *** Keywords ***
 Start SRM session
     [Documentation]  Configuring WebDriver and Setup
-    Open Browser  https://eedev.strax.co  ie
+    Open Browser  https://eedev.strax.co  gc
     Delete All Cookies
     Sleep  5s
 
