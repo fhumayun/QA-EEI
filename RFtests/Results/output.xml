@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161026 02:03:10.437" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="G:\My Code\QA-EEI\RFtests\Tests\srmEventHandler.robot" id="s1" name="srmEventHandler">
+<test id="s1-t1" name="As a User I need to be able to successfully create a New Event">
+<kw type="setup" name="Start SRM session" library="set">
+<doc>Configuring WebDriver and Setup</doc>
+<kw name="Open Browser" library="ExtendedSelenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://eedev.strax.co</arg>
+<arg>ie</arg>
+</arguments>
+<msg timestamp="20161026 02:03:10.584" level="INFO">Opening browser 'ie' to base url 'https://eedev.strax.co'</msg>
+<msg timestamp="20161026 02:03:12.593" level="DEBUG">POST http://127.0.0.1:65514/session {"requiredCapabilities": {}, "desiredCapabilities": {"platform": "WINDOWS", "browserName": "internet explorer", "version": "", "javascriptEnabled": true}}</msg>
+<msg timestamp="20161026 02:03:14.662" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:14.662" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/timeouts/async_script {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "ms": 5000.0}</msg>
+<msg timestamp="20161026 02:03:14.678" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:14.679" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/timeouts/implicit_wait {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "ms": 15000.0}</msg>
+<msg timestamp="20161026 02:03:14.689" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:14.689" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/url {"url": "https://eedev.strax.co", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8"}</msg>
+<msg timestamp="20161026 02:03:15.449" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:15.449" level="DEBUG">Opened browser with session id a8c740c3-367d-43f5-9a02-9f7ba1073da8</msg>
+<msg timestamp="20161026 02:03:15.949" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element {"using": "tag name", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "html"}</msg>
+<msg timestamp="20161026 02:03:16.030" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:16.030" level="DEBUG">GET http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/7843df46-a835-4707-88e3-119f6753faad/enabled {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "7843df46-a835-4707-88e3-119f6753faad"}</msg>
+<msg timestamp="20161026 02:03:16.098" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:16.098" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/execute_async {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(true)})}else{cb(false)}"}</msg>
+<msg timestamp="20161026 02:03:16.182" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 02:03:16.182" starttime="20161026 02:03:10.584"></status>
+</kw>
+<kw name="Delete All Cookies" library="ExtendedSelenium2Library">
+<doc>Deletes all cookies.</doc>
+<msg timestamp="20161026 02:03:16.183" level="DEBUG">DELETE http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/cookie {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8"}</msg>
+<msg timestamp="20161026 02:03:16.226" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 02:03:16.226" starttime="20161026 02:03:16.182"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20161026 02:03:21.228" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20161026 02:03:21.228" starttime="20161026 02:03:16.227"></status>
+</kw>
+<status status="PASS" endtime="20161026 02:03:21.228" starttime="20161026 02:03:10.584"></status>
+</kw>
+<kw name="Start SRM Login" library="srmLogin">
+<kw name="Given a User loads the SRM Page" library="srmLogin">
+<doc>Loading SRM page</doc>
+<kw name="And the SRM page loads successfully" library="srmLogin">
+<doc>Verify that the page loaded completely.</doc>
+<kw name="Wait Until Page Contains" library="ExtendedSelenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${srm.page_loaded_text}</arg>
+</arguments>
+<msg timestamp="20161026 02:03:21.229" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/elements {"using": "xpath", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "//*[contains(., '561-894-9865')]"}</msg>
+<msg timestamp="20161026 02:03:21.441" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 02:03:21.442" starttime="20161026 02:03:21.229"></status>
+</kw>
+<status status="PASS" endtime="20161026 02:03:21.442" starttime="20161026 02:03:21.229"></status>
+</kw>
+<kw name="And the SRM URL is correct" library="srmLogin">
+<doc>Verify that current page URL matches the expected URL.</doc>
+<kw name="Location Should Contain" library="ExtendedSelenium2Library">
+<doc>Verifies that current URL contains `expected`.</doc>
+<arguments>
+<arg>${srm.page_url}</arg>
+</arguments>
+<msg timestamp="20161026 02:03:21.943" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element {"using": "tag name", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "html"}</msg>
+<msg timestamp="20161026 02:03:22.018" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:22.018" level="DEBUG">GET http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/7843df46-a835-4707-88e3-119f6753faad/enabled {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "7843df46-a835-4707-88e3-119f6753faad"}</msg>
+<msg timestamp="20161026 02:03:22.081" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:22.081" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/timeouts/async_script {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "ms": 15000.0}</msg>
+<msg timestamp="20161026 02:03:22.099" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:22.099" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/execute_async {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(location.href)})}else{cb(location.href)}"}</msg>
+<msg timestamp="20161026 02:03:22.186" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:22.186" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/timeouts/async_script {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "ms": 5000.0}</msg>
+<msg timestamp="20161026 02:03:22.204" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:22.204" level="INFO">Current location contains 'https://eedev.strax.co'.</msg>
+<status status="PASS" endtime="20161026 02:03:22.205" starttime="20161026 02:03:21.442"></status>
+</kw>
+<status status="PASS" endtime="20161026 02:03:22.205" starttime="20161026 02:03:21.442"></status>
+</kw>
+<status status="PASS" endtime="20161026 02:03:22.205" starttime="20161026 02:03:21.228"></status>
+</kw>
+<kw name="When User Supplies Valid Credentials" library="srmLogin">
+<doc>Emulating User Login</doc>
+<kw name="And Email Field is set correctly" library="srmLogin">
+<doc>Set value to Email Email field.</doc>
+<kw name="Input Text" library="ExtendedSelenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${srm.email}</arg>
+<arg>fhumayun@eagleeye.io</arg>
+</arguments>
+<msg timestamp="20161026 02:03:22.205" level="INFO">Typing text 'fhumayun@eagleeye.io' into text field 'id=user-email'</msg>
+<msg timestamp="20161026 02:03:22.206" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/elements {"using": "id", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "user-email"}</msg>
+<msg timestamp="20161026 02:03:22.274" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:22.274" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/71d90778-a523-400d-807f-788294f91a04/clear {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "71d90778-a523-400d-807f-788294f91a04"}</msg>
+<msg timestamp="20161026 02:03:22.498" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:22.498" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/71d90778-a523-400d-807f-788294f91a04/value {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "71d90778-a523-400d-807f-788294f91a04", "value": ["f", "h", "u", "m", "a", "y", "u", "n", "@", "e", "a", "g", "l", "e", "e", "y", "e", ".", "i", "o"]}</msg>
+<msg timestamp="20161026 02:03:22.917" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:22.917" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/elements {"using": "id", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "user-email"}</msg>
+<msg timestamp="20161026 02:03:22.985" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:22.986" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/timeouts/async_script {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "ms": 15000.0}</msg>
+<msg timestamp="20161026 02:03:22.999" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:23.000" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/execute_async {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "args": [{"element-6066-11e4-a52e-4f735466cecf": "71d90778-a523-400d-807f-788294f91a04", "ELEMENT": "71d90778-a523-400d-807f-788294f91a04"}], "script": "var cb=arguments[arguments.length-1];var el=arguments[0];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){$(el).trigger('change').trigger('focusout');cb(true)})}else{cb(false)}"}</msg>
+<msg timestamp="20161026 02:03:23.192" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:23.192" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/timeouts/async_script {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "ms": 5000.0}</msg>
+<msg timestamp="20161026 02:03:23.207" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 02:03:23.207" starttime="20161026 02:03:22.205"></status>
+</kw>
+<status status="PASS" endtime="20161026 02:03:23.207" starttime="20161026 02:03:22.205"></status>
+</kw>
+<kw name="And Password Field is set correctly" library="srmLogin">
+<doc>Set value to Password Password field.</doc>
+<kw name="Input Text" library="ExtendedSelenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${srm.password}</arg>
+<arg>careteam</arg>
+</arguments>
+<msg timestamp="20161026 02:03:23.207" level="INFO">Typing text 'careteam' into text field 'id=user-password'</msg>
+<msg timestamp="20161026 02:03:23.208" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/elements {"using": "id", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "user-password"}</msg>
+<msg timestamp="20161026 02:03:23.269" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:23.269" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/aed293f2-9f10-4ad6-8a53-e5bd3a8589fd/clear {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "aed293f2-9f10-4ad6-8a53-e5bd3a8589fd"}</msg>
+<msg timestamp="20161026 02:03:23.461" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:23.461" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/aed293f2-9f10-4ad6-8a53-e5bd3a8589fd/value {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "aed293f2-9f10-4ad6-8a53-e5bd3a8589fd", "value": ["c", "a", "r", "e", "t", "e", "a", "m"]}</msg>
+<msg timestamp="20161026 02:03:23.672" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:23.673" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/elements {"using": "id", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "user-password"}</msg>
+<msg timestamp="20161026 02:03:23.798" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:23.798" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/timeouts/async_script {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "ms": 15000.0}</msg>
+<msg timestamp="20161026 02:03:23.817" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:23.817" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/execute_async {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "args": [{"element-6066-11e4-a52e-4f735466cecf": "aed293f2-9f10-4ad6-8a53-e5bd3a8589fd", "ELEMENT": "aed293f2-9f10-4ad6-8a53-e5bd3a8589fd"}], "script": "var cb=arguments[arguments.length-1];var el=arguments[0];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){$(el).trigger('change').trigger('focusout');cb(true)})}else{cb(false)}"}</msg>
+<msg timestamp="20161026 02:03:23.932" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:23.932" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/timeouts/async_script {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "ms": 5000.0}</msg>
+<msg timestamp="20161026 02:03:23.951" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 02:03:23.951" starttime="20161026 02:03:23.207"></status>
+</kw>
+<status status="PASS" endtime="20161026 02:03:23.951" starttime="20161026 02:03:23.207"></status>
+</kw>
+<kw name="And Login Button is Clicked" library="srmLogin">
+<doc>Click on Login Button.</doc>
+<kw name="Click Button" library="ExtendedSelenium2Library">
+<doc>Clicks a button identified by ``locator``.</doc>
+<arguments>
+<arg>${srm.login}</arg>
+</arguments>
+<msg timestamp="20161026 02:03:23.952" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg timestamp="20161026 02:03:23.952" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/elements {"using": "id", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "login-button"}</msg>
+<msg timestamp="20161026 02:03:24.016" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:24.016" level="DEBUG">GET http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/ce0b718f-0f56-44f9-a78a-dbf2de61c723/name {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "ce0b718f-0f56-44f9-a78a-dbf2de61c723"}</msg>
+<msg timestamp="20161026 02:03:24.045" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:24.045" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/elements {"using": "id", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "login-button"}</msg>
+<msg timestamp="20161026 02:03:24.108" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:24.108" level="DEBUG">GET http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/ce0b718f-0f56-44f9-a78a-dbf2de61c723/name {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "ce0b718f-0f56-44f9-a78a-dbf2de61c723"}</msg>
+<msg timestamp="20161026 02:03:24.138" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:24.138" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/execute {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "args": [{"element-6066-11e4-a52e-4f735466cecf": "ce0b718f-0f56-44f9-a78a-dbf2de61c723", "ELEMENT": "ce0b718f-0f56-44f9-a78a-dbf2de61c723"}], "script": "arguments[0].scrollIntoView()"}</msg>
+<msg timestamp="20161026 02:03:24.214" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:24.214" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/ce0b718f-0f56-44f9-a78a-dbf2de61c723/click {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "ce0b718f-0f56-44f9-a78a-dbf2de61c723"}</msg>
+<msg timestamp="20161026 02:03:24.585" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:25.085" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element {"using": "tag name", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "html"}</msg>
+<msg timestamp="20161026 02:03:25.171" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:25.171" level="DEBUG">GET http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/7843df46-a835-4707-88e3-119f6753faad/enabled {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "7843df46-a835-4707-88e3-119f6753faad"}</msg>
+<msg timestamp="20161026 02:03:25.238" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:25.238" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/execute_async {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(true)})}else{cb(false)}"}</msg>
+<msg timestamp="20161026 02:03:27.171" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 02:03:27.171" starttime="20161026 02:03:23.951"></status>
+</kw>
+<status status="PASS" endtime="20161026 02:03:27.171" starttime="20161026 02:03:23.951"></status>
+</kw>
+<status status="PASS" endtime="20161026 02:03:27.171" starttime="20161026 02:03:22.205"></status>
+</kw>
+<kw name="Then Verify Active Event Page gets Loaded" library="srmLogin">
+<doc>Verify that the page loaded completely.</doc>
+<kw name="Wait Until Page Contains" library="ExtendedSelenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${srm.page_loaded_text}</arg>
+</arguments>
+<msg timestamp="20161026 02:03:27.172" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/elements {"using": "xpath", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "//*[contains(., '561-894-9865')]"}</msg>
+<msg timestamp="20161026 02:03:27.297" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 02:03:27.297" starttime="20161026 02:03:27.172"></status>
+</kw>
+<status status="PASS" endtime="20161026 02:03:27.297" starttime="20161026 02:03:27.171"></status>
+</kw>
+<status status="PASS" endtime="20161026 02:03:27.297" starttime="20161026 02:03:21.228"></status>
+</kw>
+<kw type="teardown" name="End SRM Session" library="srmLogout">
+<doc>Concatenate Logout Sequence</doc>
+<kw name="Given a User selects the main menu button" library="srmLogout">
+<doc>Verification Step</doc>
+<kw name="Click Element" library="ExtendedSelenium2Library">
+<doc>Clicks an element identified by ``locator``.</doc>
+<arguments>
+<arg>${srm.menu-button}</arg>
+</arguments>
+<msg timestamp="20161026 02:03:27.298" level="INFO">Clicking element 'id=open-menu-button'.</msg>
+<msg timestamp="20161026 02:03:27.298" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/elements {"using": "id", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "open-menu-button"}</msg>
+<msg timestamp="20161026 02:03:27.383" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:27.383" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/execute {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "args": [{"element-6066-11e4-a52e-4f735466cecf": "6b64b101-a3c4-4f39-882c-d54ec3e027c2", "ELEMENT": "6b64b101-a3c4-4f39-882c-d54ec3e027c2"}], "script": "arguments[0].scrollIntoView()"}</msg>
+<msg timestamp="20161026 02:03:27.562" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:27.562" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/6b64b101-a3c4-4f39-882c-d54ec3e027c2/click {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "6b64b101-a3c4-4f39-882c-d54ec3e027c2"}</msg>
+<msg timestamp="20161026 02:03:27.847" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:28.347" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element {"using": "tag name", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "html"}</msg>
+<msg timestamp="20161026 02:03:28.415" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:28.415" level="DEBUG">GET http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/7843df46-a835-4707-88e3-119f6753faad/enabled {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "7843df46-a835-4707-88e3-119f6753faad"}</msg>
+<msg timestamp="20161026 02:03:28.478" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:28.478" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/execute_async {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(true)})}else{cb(false)}"}</msg>
+<msg timestamp="20161026 02:03:28.571" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 02:03:28.572" starttime="20161026 02:03:27.298"></status>
+</kw>
+<status status="PASS" endtime="20161026 02:03:28.572" starttime="20161026 02:03:27.298"></status>
+</kw>
+<kw name="When the correct menu selections are made" library="srmLogout">
+<doc>Logout Sequence</doc>
+<kw name="Current Frame Contains" library="ExtendedSelenium2Library">
+<doc>Verifies that current frame contains `text`.</doc>
+<arguments>
+<arg>${srm.select-profile-txt}</arg>
+</arguments>
+<msg timestamp="20161026 02:03:28.572" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/elements {"using": "xpath", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "//*[contains(., 'Users')]"}</msg>
+<msg timestamp="20161026 02:03:28.731" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:28.731" level="INFO">Current page contains text 'Users'.</msg>
+<status status="PASS" endtime="20161026 02:03:28.732" starttime="20161026 02:03:28.572"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="ExtendedSelenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${srm.select-profile}</arg>
+</arguments>
+<msg timestamp="20161026 02:03:28.732" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/elements {"using": "css selector", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "body &gt; div.container &gt; div.menu-container.ng-scope &gt; div &gt; md-sidenav &gt; md-toolbar &gt; div &gt; md-menu"}</msg>
+<msg timestamp="20161026 02:03:28.839" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:28.840" level="DEBUG">GET http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/a1b72c1e-1ed7-4c62-ad39-004d911994bd/displayed {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "a1b72c1e-1ed7-4c62-ad39-004d911994bd"}</msg>
+<msg timestamp="20161026 02:03:28.935" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 02:03:28.935" starttime="20161026 02:03:28.732"></status>
+</kw>
+<kw name="Click Element" library="ExtendedSelenium2Library">
+<doc>Clicks an element identified by ``locator``.</doc>
+<arguments>
+<arg>${srm.select-profile}</arg>
+</arguments>
+<msg timestamp="20161026 02:03:28.936" level="INFO">Clicking element 'css=body &gt; div.container &gt; div.menu-container.ng-scope &gt; div &gt; md-sidenav &gt; md-toolbar &gt; div &gt; md-menu'.</msg>
+<msg timestamp="20161026 02:03:28.936" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/elements {"using": "css selector", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "body &gt; div.container &gt; div.menu-container.ng-scope &gt; div &gt; md-sidenav &gt; md-toolbar &gt; div &gt; md-menu"}</msg>
+<msg timestamp="20161026 02:03:29.070" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:29.071" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/execute {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "args": [{"element-6066-11e4-a52e-4f735466cecf": "a1b72c1e-1ed7-4c62-ad39-004d911994bd", "ELEMENT": "a1b72c1e-1ed7-4c62-ad39-004d911994bd"}], "script": "arguments[0].scrollIntoView()"}</msg>
+<msg timestamp="20161026 02:03:29.149" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:29.149" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/a1b72c1e-1ed7-4c62-ad39-004d911994bd/click {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "a1b72c1e-1ed7-4c62-ad39-004d911994bd"}</msg>
+<msg timestamp="20161026 02:03:29.457" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:29.958" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element {"using": "tag name", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "html"}</msg>
+<msg timestamp="20161026 02:03:30.032" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:30.032" level="DEBUG">GET http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/7843df46-a835-4707-88e3-119f6753faad/enabled {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "7843df46-a835-4707-88e3-119f6753faad"}</msg>
+<msg timestamp="20161026 02:03:30.111" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:30.111" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/execute_async {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(true)})}else{cb(false)}"}</msg>
+<msg timestamp="20161026 02:03:30.237" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 02:03:30.237" starttime="20161026 02:03:28.935"></status>
+</kw>
+<kw name="Current Frame Contains" library="ExtendedSelenium2Library">
+<doc>Verifies that current frame contains `text`.</doc>
+<arguments>
+<arg>${srm.logout-txt}</arg>
+</arguments>
+<msg timestamp="20161026 02:03:30.238" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/elements {"using": "xpath", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "//*[contains(., 'Logout')]"}</msg>
+<msg timestamp="20161026 02:03:30.357" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:30.357" level="INFO">Current page contains text 'Logout'.</msg>
+<status status="PASS" endtime="20161026 02:03:30.357" starttime="20161026 02:03:30.238"></status>
+</kw>
+<kw name="Click Element" library="ExtendedSelenium2Library">
+<doc>Clicks an element identified by ``locator``.</doc>
+<arguments>
+<arg>${srm.logout}</arg>
+</arguments>
+<msg timestamp="20161026 02:03:30.357" level="INFO">Clicking element 'id=logout-button'.</msg>
+<msg timestamp="20161026 02:03:30.357" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/elements {"using": "id", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "logout-button"}</msg>
+<msg timestamp="20161026 02:03:30.428" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:30.428" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/execute {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "args": [{"element-6066-11e4-a52e-4f735466cecf": "0e8f1beb-7660-42a8-9947-48871d3ec7e8", "ELEMENT": "0e8f1beb-7660-42a8-9947-48871d3ec7e8"}], "script": "arguments[0].scrollIntoView()"}</msg>
+<msg timestamp="20161026 02:03:30.588" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:30.588" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/0e8f1beb-7660-42a8-9947-48871d3ec7e8/click {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "0e8f1beb-7660-42a8-9947-48871d3ec7e8"}</msg>
+<msg timestamp="20161026 02:03:30.892" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:31.393" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element {"using": "tag name", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "html"}</msg>
+<msg timestamp="20161026 02:03:31.459" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:31.459" level="DEBUG">GET http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/7843df46-a835-4707-88e3-119f6753faad/enabled {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "7843df46-a835-4707-88e3-119f6753faad"}</msg>
+<msg timestamp="20161026 02:03:31.516" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:31.516" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/execute_async {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(true)})}else{cb(false)}"}</msg>
+<msg timestamp="20161026 02:03:31.594" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 02:03:31.594" starttime="20161026 02:03:30.357"></status>
+</kw>
+<status status="PASS" endtime="20161026 02:03:31.594" starttime="20161026 02:03:28.572"></status>
+</kw>
+<kw name="Then the User is logged out of the SRM" library="srmLogout">
+<doc>Verify Landing Page Loaded</doc>
+<kw name="Location Should Contain" library="ExtendedSelenium2Library">
+<doc>Verifies that current URL contains `expected`.</doc>
+<arguments>
+<arg>${srm.page-url}</arg>
+</arguments>
+<msg timestamp="20161026 02:03:32.095" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element {"using": "tag name", "sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "value": "html"}</msg>
+<msg timestamp="20161026 02:03:32.165" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:32.165" level="DEBUG">GET http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/element/7843df46-a835-4707-88e3-119f6753faad/enabled {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "id": "7843df46-a835-4707-88e3-119f6753faad"}</msg>
+<msg timestamp="20161026 02:03:32.411" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:32.412" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/timeouts/async_script {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "ms": 15000.0}</msg>
+<msg timestamp="20161026 02:03:32.431" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:32.431" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/execute_async {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(location.href)})}else{cb(location.href)}"}</msg>
+<msg timestamp="20161026 02:03:32.558" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:32.559" level="DEBUG">POST http://127.0.0.1:65514/session/a8c740c3-367d-43f5-9a02-9f7ba1073da8/timeouts/async_script {"sessionId": "a8c740c3-367d-43f5-9a02-9f7ba1073da8", "ms": 5000.0}</msg>
+<msg timestamp="20161026 02:03:32.577" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 02:03:32.577" level="INFO">Current location contains 'https://eedev.strax.co'.</msg>
+<status status="PASS" endtime="20161026 02:03:32.577" starttime="20161026 02:03:31.594"></status>
+</kw>
+<kw name="Wait 5s" library="srmLogout">
+<doc>Sleep delay</doc>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20161026 02:03:37.578" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20161026 02:03:37.578" starttime="20161026 02:03:32.578"></status>
+</kw>
+<status status="PASS" endtime="20161026 02:03:37.578" starttime="20161026 02:03:32.578"></status>
+</kw>
+<status status="PASS" endtime="20161026 02:03:37.579" starttime="20161026 02:03:31.594"></status>
+</kw>
+<status status="PASS" endtime="20161026 02:03:37.579" starttime="20161026 02:03:27.298"></status>
+</kw>
+<doc>Create New Event Sequence for the Strax Response Manager</doc>
+<tags>
+<tag>NewEvent</tag>
+</tags>
+<status status="PASS" endtime="20161026 02:03:37.579" critical="yes" starttime="20161026 02:03:10.583"></status>
+</test>
+<doc>srm web application common page object.</doc>
+<status status="PASS" endtime="20161026 02:03:37.580" starttime="20161026 02:03:10.439"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">NewEvent</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="srmEventHandler" pass="1">srmEventHandler</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
