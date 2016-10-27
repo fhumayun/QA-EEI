@@ -7,10 +7,8 @@ Resource  ../Resources/PageObjects/srmLogout.robot
 Test Setup  Start SRM session
 Test Teardown  End SRM Session
 
-
 *** Test Cases ***
 As a User I need to be able to successfully create a New Event
-    [Documentation]  Create New Event Sequence for the Strax Response Manager
     [Tags]  NewEvent
 
     srmLogin.Start SRM Login

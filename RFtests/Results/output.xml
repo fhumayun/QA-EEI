@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20161026 11:25:28.710" generator="Robot 3.0 (Python 2.7.10 on darwin)">
+<robot generated="20161026 17:14:26.472" generator="Robot 3.0 (Python 2.7.10 on darwin)">
 <suite source="/Volumes/QA-XS/My Code/QA-EEI/RFtests/Tests/srmEventHandler.robot" id="s1" name="srmEventHandler">
 <test id="s1-t1" name="As a User I need to be able to successfully create a New Event">
 <kw type="setup" name="Start SRM session" library="set">
@@ -10,39 +10,39 @@
 <arg>https://eedev.strax.co</arg>
 <arg>gc</arg>
 </arguments>
-<msg timestamp="20161026 11:25:29.037" level="INFO">Opening browser 'gc' to base url 'https://eedev.strax.co'</msg>
-<msg timestamp="20161026 11:25:30.071" level="DEBUG">POST http://127.0.0.1:57135/session {"requiredCapabilities": {}, "desiredCapabilities": {"platform": "ANY", "browserName": "chrome", "version": "", "chromeOptions": {"args": [], "extensions": []}, "javascriptEnabled": true}}</msg>
-<msg timestamp="20161026 11:25:31.122" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:31.123" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/timeouts/async_script {"sessionId": "99903d77079ebdac271c5b3582c405fe", "ms": 5000.0}</msg>
-<msg timestamp="20161026 11:25:31.126" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:31.126" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/timeouts/implicit_wait {"sessionId": "99903d77079ebdac271c5b3582c405fe", "ms": 15000.0}</msg>
-<msg timestamp="20161026 11:25:31.128" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:31.128" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/url {"url": "https://eedev.strax.co", "sessionId": "99903d77079ebdac271c5b3582c405fe"}</msg>
-<msg timestamp="20161026 11:25:33.151" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:33.151" level="DEBUG">Opened browser with session id 99903d77079ebdac271c5b3582c405fe</msg>
-<msg timestamp="20161026 11:25:33.653" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element {"using": "tag name", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "html"}</msg>
-<msg timestamp="20161026 11:25:34.179" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:34.180" level="DEBUG">GET http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-1/enabled {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-1"}</msg>
-<msg timestamp="20161026 11:25:34.189" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:34.190" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/execute_async {"sessionId": "99903d77079ebdac271c5b3582c405fe", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(true)})}else{cb(false)}"}</msg>
-<msg timestamp="20161026 11:25:34.300" level="DEBUG">Finished Request</msg>
-<status status="PASS" endtime="20161026 11:25:34.300" starttime="20161026 11:25:29.037"></status>
+<msg timestamp="20161026 17:14:26.631" level="INFO">Opening browser 'gc' to base url 'https://eedev.strax.co'</msg>
+<msg timestamp="20161026 17:14:27.702" level="DEBUG">POST http://127.0.0.1:61976/session {"requiredCapabilities": {}, "desiredCapabilities": {"platform": "ANY", "browserName": "chrome", "version": "", "chromeOptions": {"args": [], "extensions": []}, "javascriptEnabled": true}}</msg>
+<msg timestamp="20161026 17:14:28.581" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:28.581" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/timeouts/async_script {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "ms": 5000.0}</msg>
+<msg timestamp="20161026 17:14:28.583" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:28.583" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/timeouts/implicit_wait {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "ms": 15000.0}</msg>
+<msg timestamp="20161026 17:14:28.585" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:28.585" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/url {"url": "https://eedev.strax.co", "sessionId": "1776b1b87731521c6faf8fa402652ebf"}</msg>
+<msg timestamp="20161026 17:14:29.943" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:29.944" level="DEBUG">Opened browser with session id 1776b1b87731521c6faf8fa402652ebf</msg>
+<msg timestamp="20161026 17:14:30.446" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element {"using": "tag name", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "html"}</msg>
+<msg timestamp="20161026 17:14:30.525" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:30.525" level="DEBUG">GET http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-1/enabled {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-1"}</msg>
+<msg timestamp="20161026 17:14:30.531" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:30.532" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/execute_async {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(true)})}else{cb(false)}"}</msg>
+<msg timestamp="20161026 17:14:30.644" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 17:14:30.645" starttime="20161026 17:14:26.630"></status>
 </kw>
 <kw name="Delete All Cookies" library="ExtendedSelenium2Library">
 <doc>Deletes all cookies.</doc>
-<msg timestamp="20161026 11:25:34.301" level="DEBUG">DELETE http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/cookie {"sessionId": "99903d77079ebdac271c5b3582c405fe"}</msg>
-<msg timestamp="20161026 11:25:34.304" level="DEBUG">Finished Request</msg>
-<status status="PASS" endtime="20161026 11:25:34.305" starttime="20161026 11:25:34.301"></status>
+<msg timestamp="20161026 17:14:30.645" level="DEBUG">DELETE http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/cookie {"sessionId": "1776b1b87731521c6faf8fa402652ebf"}</msg>
+<msg timestamp="20161026 17:14:30.649" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 17:14:30.649" starttime="20161026 17:14:30.645"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20161026 11:25:39.306" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20161026 11:25:39.306" starttime="20161026 11:25:34.305"></status>
+<msg timestamp="20161026 17:14:35.651" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20161026 17:14:35.652" starttime="20161026 17:14:30.650"></status>
 </kw>
-<status status="PASS" endtime="20161026 11:25:39.308" starttime="20161026 11:25:29.036"></status>
+<status status="PASS" endtime="20161026 17:14:35.652" starttime="20161026 17:14:26.630"></status>
 </kw>
 <kw name="Start SRM Login" library="srmLogin">
 <kw name="Given a User loads the SRM Page" library="srmLogin">
@@ -54,11 +54,11 @@
 <arguments>
 <arg>${srm.page_loaded_text}</arg>
 </arguments>
-<msg timestamp="20161026 11:25:39.316" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/elements {"using": "xpath", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "//*[contains(., '561-894-9865')]"}</msg>
-<msg timestamp="20161026 11:25:39.354" level="DEBUG">Finished Request</msg>
-<status status="PASS" endtime="20161026 11:25:39.355" starttime="20161026 11:25:39.315"></status>
+<msg timestamp="20161026 17:14:35.656" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/elements {"using": "xpath", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "//*[contains(., '561-894-9865')]"}</msg>
+<msg timestamp="20161026 17:14:35.701" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 17:14:35.702" starttime="20161026 17:14:35.656"></status>
 </kw>
-<status status="PASS" endtime="20161026 11:25:39.355" starttime="20161026 11:25:39.313"></status>
+<status status="PASS" endtime="20161026 17:14:35.702" starttime="20161026 17:14:35.655"></status>
 </kw>
 <kw name="And the SRM URL is correct" library="srmLogin">
 <doc>Verify that current page URL matches the expected URL.</doc>
@@ -67,22 +67,22 @@
 <arguments>
 <arg>${srm.page_url}</arg>
 </arguments>
-<msg timestamp="20161026 11:25:39.861" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element {"using": "tag name", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "html"}</msg>
-<msg timestamp="20161026 11:25:39.867" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:39.868" level="DEBUG">GET http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-1/enabled {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-1"}</msg>
-<msg timestamp="20161026 11:25:39.872" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:39.872" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/timeouts/async_script {"sessionId": "99903d77079ebdac271c5b3582c405fe", "ms": 15000.0}</msg>
-<msg timestamp="20161026 11:25:39.874" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:39.874" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/execute_async {"sessionId": "99903d77079ebdac271c5b3582c405fe", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(location.href)})}else{cb(location.href)}"}</msg>
-<msg timestamp="20161026 11:25:39.881" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:39.881" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/timeouts/async_script {"sessionId": "99903d77079ebdac271c5b3582c405fe", "ms": 5000.0}</msg>
-<msg timestamp="20161026 11:25:39.883" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:39.883" level="INFO">Current location contains 'https://eedev.strax.co'.</msg>
-<status status="PASS" endtime="20161026 11:25:39.883" starttime="20161026 11:25:39.356"></status>
+<msg timestamp="20161026 17:14:36.209" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element {"using": "tag name", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "html"}</msg>
+<msg timestamp="20161026 17:14:36.215" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:36.215" level="DEBUG">GET http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-1/enabled {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-1"}</msg>
+<msg timestamp="20161026 17:14:36.219" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:36.219" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/timeouts/async_script {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "ms": 15000.0}</msg>
+<msg timestamp="20161026 17:14:36.221" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:36.221" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/execute_async {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(location.href)})}else{cb(location.href)}"}</msg>
+<msg timestamp="20161026 17:14:36.228" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:36.228" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/timeouts/async_script {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "ms": 5000.0}</msg>
+<msg timestamp="20161026 17:14:36.229" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:36.229" level="INFO">Current location contains 'https://eedev.strax.co'.</msg>
+<status status="PASS" endtime="20161026 17:14:36.229" starttime="20161026 17:14:35.703"></status>
 </kw>
-<status status="PASS" endtime="20161026 11:25:39.883" starttime="20161026 11:25:39.356"></status>
+<status status="PASS" endtime="20161026 17:14:36.229" starttime="20161026 17:14:35.702"></status>
 </kw>
-<status status="PASS" endtime="20161026 11:25:39.883" starttime="20161026 11:25:39.312"></status>
+<status status="PASS" endtime="20161026 17:14:36.229" starttime="20161026 17:14:35.654"></status>
 </kw>
 <kw name="When User Supplies Valid Credentials" library="srmLogin">
 <doc>Emulating User Login</doc>
@@ -94,24 +94,24 @@
 <arg>${srm.email}</arg>
 <arg>fhumayun@eagleeye.io</arg>
 </arguments>
-<msg timestamp="20161026 11:25:39.884" level="INFO">Typing text 'fhumayun@eagleeye.io' into text field 'id=user-email'</msg>
-<msg timestamp="20161026 11:25:39.884" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/elements {"using": "id", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "user-email"}</msg>
-<msg timestamp="20161026 11:25:39.902" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:39.903" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-8/clear {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-8"}</msg>
-<msg timestamp="20161026 11:25:39.930" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:39.931" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-8/value {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-8", "value": ["f", "h", "u", "m", "a", "y", "u", "n", "@", "e", "a", "g", "l", "e", "e", "y", "e", ".", "i", "o"]}</msg>
-<msg timestamp="20161026 11:25:40.181" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:40.181" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/elements {"using": "id", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "user-email"}</msg>
-<msg timestamp="20161026 11:25:40.193" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:40.193" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/timeouts/async_script {"sessionId": "99903d77079ebdac271c5b3582c405fe", "ms": 15000.0}</msg>
-<msg timestamp="20161026 11:25:40.195" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:40.195" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/execute_async {"sessionId": "99903d77079ebdac271c5b3582c405fe", "args": [{"element-6066-11e4-a52e-4f735466cecf": "0.7598188359094444-8", "ELEMENT": "0.7598188359094444-8"}], "script": "var cb=arguments[arguments.length-1];var el=arguments[0];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){$(el).trigger('change').trigger('focusout');cb(true)})}else{cb(false)}"}</msg>
-<msg timestamp="20161026 11:25:40.304" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:40.304" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/timeouts/async_script {"sessionId": "99903d77079ebdac271c5b3582c405fe", "ms": 5000.0}</msg>
-<msg timestamp="20161026 11:25:40.306" level="DEBUG">Finished Request</msg>
-<status status="PASS" endtime="20161026 11:25:40.306" starttime="20161026 11:25:39.884"></status>
+<msg timestamp="20161026 17:14:36.230" level="INFO">Typing text 'fhumayun@eagleeye.io' into text field 'id=user-email'</msg>
+<msg timestamp="20161026 17:14:36.231" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/elements {"using": "id", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "user-email"}</msg>
+<msg timestamp="20161026 17:14:36.243" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:36.244" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-8/clear {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-8"}</msg>
+<msg timestamp="20161026 17:14:36.261" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:36.261" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-8/value {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-8", "value": ["f", "h", "u", "m", "a", "y", "u", "n", "@", "e", "a", "g", "l", "e", "e", "y", "e", ".", "i", "o"]}</msg>
+<msg timestamp="20161026 17:14:36.412" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:36.413" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/elements {"using": "id", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "user-email"}</msg>
+<msg timestamp="20161026 17:14:36.419" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:36.420" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/timeouts/async_script {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "ms": 15000.0}</msg>
+<msg timestamp="20161026 17:14:36.421" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:36.421" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/execute_async {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "args": [{"element-6066-11e4-a52e-4f735466cecf": "0.5950836661791297-8", "ELEMENT": "0.5950836661791297-8"}], "script": "var cb=arguments[arguments.length-1];var el=arguments[0];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){$(el).trigger('change').trigger('focusout');cb(true)})}else{cb(false)}"}</msg>
+<msg timestamp="20161026 17:14:36.938" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:36.939" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/timeouts/async_script {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "ms": 5000.0}</msg>
+<msg timestamp="20161026 17:14:36.940" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 17:14:36.940" starttime="20161026 17:14:36.230"></status>
 </kw>
-<status status="PASS" endtime="20161026 11:25:40.306" starttime="20161026 11:25:39.884"></status>
+<status status="PASS" endtime="20161026 17:14:36.940" starttime="20161026 17:14:36.230"></status>
 </kw>
 <kw name="And Password Field is set correctly" library="srmLogin">
 <doc>Set value to Password Password field.</doc>
@@ -121,24 +121,24 @@
 <arg>${srm.password}</arg>
 <arg>careteam</arg>
 </arguments>
-<msg timestamp="20161026 11:25:40.307" level="INFO">Typing text 'careteam' into text field 'id=user-password'</msg>
-<msg timestamp="20161026 11:25:40.307" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/elements {"using": "id", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "user-password"}</msg>
-<msg timestamp="20161026 11:25:40.322" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:40.322" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-9/clear {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-9"}</msg>
-<msg timestamp="20161026 11:25:40.353" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:40.354" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-9/value {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-9", "value": ["c", "a", "r", "e", "t", "e", "a", "m"]}</msg>
-<msg timestamp="20161026 11:25:40.445" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:40.446" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/elements {"using": "id", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "user-password"}</msg>
-<msg timestamp="20161026 11:25:40.466" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:40.466" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/timeouts/async_script {"sessionId": "99903d77079ebdac271c5b3582c405fe", "ms": 15000.0}</msg>
-<msg timestamp="20161026 11:25:40.469" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:40.469" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/execute_async {"sessionId": "99903d77079ebdac271c5b3582c405fe", "args": [{"element-6066-11e4-a52e-4f735466cecf": "0.7598188359094444-9", "ELEMENT": "0.7598188359094444-9"}], "script": "var cb=arguments[arguments.length-1];var el=arguments[0];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){$(el).trigger('change').trigger('focusout');cb(true)})}else{cb(false)}"}</msg>
-<msg timestamp="20161026 11:25:40.488" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:40.489" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/timeouts/async_script {"sessionId": "99903d77079ebdac271c5b3582c405fe", "ms": 5000.0}</msg>
-<msg timestamp="20161026 11:25:40.490" level="DEBUG">Finished Request</msg>
-<status status="PASS" endtime="20161026 11:25:40.490" starttime="20161026 11:25:40.307"></status>
+<msg timestamp="20161026 17:14:36.941" level="INFO">Typing text 'careteam' into text field 'id=user-password'</msg>
+<msg timestamp="20161026 17:14:36.941" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/elements {"using": "id", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "user-password"}</msg>
+<msg timestamp="20161026 17:14:36.960" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:36.960" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-9/clear {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-9"}</msg>
+<msg timestamp="20161026 17:14:36.993" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:36.993" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-9/value {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-9", "value": ["c", "a", "r", "e", "t", "e", "a", "m"]}</msg>
+<msg timestamp="20161026 17:14:37.113" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:37.114" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/elements {"using": "id", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "user-password"}</msg>
+<msg timestamp="20161026 17:14:37.132" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:37.132" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/timeouts/async_script {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "ms": 15000.0}</msg>
+<msg timestamp="20161026 17:14:37.139" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:37.139" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/execute_async {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "args": [{"element-6066-11e4-a52e-4f735466cecf": "0.5950836661791297-9", "ELEMENT": "0.5950836661791297-9"}], "script": "var cb=arguments[arguments.length-1];var el=arguments[0];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){$(el).trigger('change').trigger('focusout');cb(true)})}else{cb(false)}"}</msg>
+<msg timestamp="20161026 17:14:37.975" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:37.975" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/timeouts/async_script {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "ms": 5000.0}</msg>
+<msg timestamp="20161026 17:14:37.976" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 17:14:37.977" starttime="20161026 17:14:36.941"></status>
 </kw>
-<status status="PASS" endtime="20161026 11:25:40.491" starttime="20161026 11:25:40.306"></status>
+<status status="PASS" endtime="20161026 17:14:37.977" starttime="20161026 17:14:36.941"></status>
 </kw>
 <kw name="And Login Button is Clicked" library="srmLogin">
 <doc>Click on Login Button.</doc>
@@ -147,28 +147,28 @@
 <arguments>
 <arg>${srm.login}</arg>
 </arguments>
-<msg timestamp="20161026 11:25:40.492" level="INFO">Clicking button 'id=login-button'.</msg>
-<msg timestamp="20161026 11:25:40.492" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/elements {"using": "id", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "login-button"}</msg>
-<msg timestamp="20161026 11:25:40.509" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:40.509" level="DEBUG">GET http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-10/name {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-10"}</msg>
-<msg timestamp="20161026 11:25:40.515" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:40.515" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/elements {"using": "id", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "login-button"}</msg>
-<msg timestamp="20161026 11:25:40.522" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:40.523" level="DEBUG">GET http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-10/name {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-10"}</msg>
-<msg timestamp="20161026 11:25:40.528" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:40.528" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-10/click {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-10"}</msg>
-<msg timestamp="20161026 11:25:40.596" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:41.103" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element {"using": "tag name", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "html"}</msg>
-<msg timestamp="20161026 11:25:41.111" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:41.112" level="DEBUG">GET http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-1/enabled {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-1"}</msg>
-<msg timestamp="20161026 11:25:41.117" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:41.118" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/execute_async {"sessionId": "99903d77079ebdac271c5b3582c405fe", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(true)})}else{cb(false)}"}</msg>
-<msg timestamp="20161026 11:25:45.094" level="DEBUG">Finished Request</msg>
-<status status="PASS" endtime="20161026 11:25:45.094" starttime="20161026 11:25:40.491"></status>
+<msg timestamp="20161026 17:14:37.978" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg timestamp="20161026 17:14:37.978" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/elements {"using": "id", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "login-button"}</msg>
+<msg timestamp="20161026 17:14:37.992" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:37.993" level="DEBUG">GET http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-10/name {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-10"}</msg>
+<msg timestamp="20161026 17:14:37.998" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:37.998" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/elements {"using": "id", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "login-button"}</msg>
+<msg timestamp="20161026 17:14:38.004" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:38.004" level="DEBUG">GET http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-10/name {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-10"}</msg>
+<msg timestamp="20161026 17:14:38.008" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:38.008" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-10/click {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-10"}</msg>
+<msg timestamp="20161026 17:14:38.052" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:38.557" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element {"using": "tag name", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "html"}</msg>
+<msg timestamp="20161026 17:14:38.566" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:38.566" level="DEBUG">GET http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-1/enabled {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-1"}</msg>
+<msg timestamp="20161026 17:14:38.571" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:38.571" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/execute_async {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(true)})}else{cb(false)}"}</msg>
+<msg timestamp="20161026 17:14:41.960" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 17:14:41.960" starttime="20161026 17:14:37.977"></status>
 </kw>
-<status status="PASS" endtime="20161026 11:25:45.094" starttime="20161026 11:25:40.491"></status>
+<status status="PASS" endtime="20161026 17:14:41.960" starttime="20161026 17:14:37.977"></status>
 </kw>
-<status status="PASS" endtime="20161026 11:25:45.094" starttime="20161026 11:25:39.883"></status>
+<status status="PASS" endtime="20161026 17:14:41.960" starttime="20161026 17:14:36.230"></status>
 </kw>
 <kw name="Then Verify Active Event Page gets Loaded" library="srmLogin">
 <doc>Verify that the page loaded completely.</doc>
@@ -177,13 +177,83 @@
 <arguments>
 <arg>${srm.page_loaded_text}</arg>
 </arguments>
-<msg timestamp="20161026 11:25:45.095" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/elements {"using": "xpath", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "//*[contains(., '561-894-9865')]"}</msg>
-<msg timestamp="20161026 11:25:45.108" level="DEBUG">Finished Request</msg>
-<status status="PASS" endtime="20161026 11:25:45.108" starttime="20161026 11:25:45.095"></status>
+<msg timestamp="20161026 17:14:41.962" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/elements {"using": "xpath", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "//*[contains(., '561-894-9865')]"}</msg>
+<msg timestamp="20161026 17:14:41.982" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 17:14:41.982" starttime="20161026 17:14:41.961"></status>
 </kw>
-<status status="PASS" endtime="20161026 11:25:45.108" starttime="20161026 11:25:45.094"></status>
+<status status="PASS" endtime="20161026 17:14:41.982" starttime="20161026 17:14:41.961"></status>
 </kw>
-<status status="PASS" endtime="20161026 11:25:45.108" starttime="20161026 11:25:39.310"></status>
+<status status="PASS" endtime="20161026 17:14:41.982" starttime="20161026 17:14:35.653"></status>
+</kw>
+<kw name="Create a New Event" library="srmAddEvent">
+<kw name="Given an authenticated User is in the SRM" library="srmAddEvent">
+<doc>Verify that current page URL matches the expected URL.</doc>
+<kw name="Location Should Contain" library="ExtendedSelenium2Library">
+<doc>Verifies that current URL contains `expected`.</doc>
+<arguments>
+<arg>${srm.page_url}</arg>
+</arguments>
+<msg timestamp="20161026 17:14:42.486" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element {"using": "tag name", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "html"}</msg>
+<msg timestamp="20161026 17:14:42.502" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:42.502" level="DEBUG">GET http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-1/enabled {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-1"}</msg>
+<msg timestamp="20161026 17:14:42.508" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:42.508" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/timeouts/async_script {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "ms": 15000.0}</msg>
+<msg timestamp="20161026 17:14:42.509" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:42.509" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/execute_async {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(location.href)})}else{cb(location.href)}"}</msg>
+<msg timestamp="20161026 17:14:42.516" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:42.516" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/timeouts/async_script {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "ms": 5000.0}</msg>
+<msg timestamp="20161026 17:14:42.517" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:42.517" level="INFO">Current location contains 'https://eedev.strax.co'.</msg>
+<status status="PASS" endtime="20161026 17:14:42.517" starttime="20161026 17:14:41.983"></status>
+</kw>
+<status status="PASS" endtime="20161026 17:14:42.517" starttime="20161026 17:14:41.983"></status>
+</kw>
+<kw name="When the User clicks the Add Event Icon" library="srmAddEvent">
+<doc>Click on Addcircleoutline Button.</doc>
+<kw name="Click Button" library="ExtendedSelenium2Library">
+<doc>Clicks a button identified by ``locator``.</doc>
+<arguments>
+<arg>${srm.addcircleoutline}</arg>
+</arguments>
+<msg timestamp="20161026 17:14:42.518" level="INFO">Clicking button 'id=add-button'.</msg>
+<msg timestamp="20161026 17:14:42.518" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/elements {"using": "id", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "add-button"}</msg>
+<msg timestamp="20161026 17:14:42.531" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:42.531" level="DEBUG">GET http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-11/name {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-11"}</msg>
+<msg timestamp="20161026 17:14:42.536" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:42.536" level="DEBUG">GET http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-12/name {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-12"}</msg>
+<msg timestamp="20161026 17:14:42.542" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:42.542" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/elements {"using": "id", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "add-button"}</msg>
+<msg timestamp="20161026 17:14:42.548" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:42.548" level="DEBUG">GET http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-11/name {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-11"}</msg>
+<msg timestamp="20161026 17:14:42.551" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:42.552" level="DEBUG">GET http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-12/name {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-12"}</msg>
+<msg timestamp="20161026 17:14:42.556" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:42.556" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-11/click {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-11"}</msg>
+<msg timestamp="20161026 17:14:42.598" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:43.102" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element {"using": "tag name", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "html"}</msg>
+<msg timestamp="20161026 17:14:43.110" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:43.110" level="DEBUG">GET http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-1/enabled {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-1"}</msg>
+<msg timestamp="20161026 17:14:43.115" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:43.115" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/execute_async {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(true)})}else{cb(false)}"}</msg>
+<msg timestamp="20161026 17:14:44.623" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 17:14:44.623" starttime="20161026 17:14:42.518"></status>
+</kw>
+<status status="PASS" endtime="20161026 17:14:44.624" starttime="20161026 17:14:42.518"></status>
+</kw>
+<kw name="Then the New Event Page is Displayed" library="srmAddEvent">
+<doc>Verify that the SRM New Event page loaded completely.</doc>
+<kw name="Wait Until Page Contains Element" library="ExtendedSelenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${srm.field_validation_key}</arg>
+</arguments>
+<msg timestamp="20161026 17:14:44.625" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/elements {"using": "id", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "referenceId"}</msg>
+<msg timestamp="20161026 17:14:44.642" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 17:14:44.643" starttime="20161026 17:14:44.624"></status>
+</kw>
+<status status="PASS" endtime="20161026 17:14:44.643" starttime="20161026 17:14:44.624"></status>
+</kw>
+<status status="PASS" endtime="20161026 17:14:44.643" starttime="20161026 17:14:41.982"></status>
 </kw>
 <kw type="teardown" name="End SRM Session" library="srmLogout">
 <doc>Concatenate Logout Sequence</doc>
@@ -194,20 +264,20 @@
 <arguments>
 <arg>${srm.menu-button}</arg>
 </arguments>
-<msg timestamp="20161026 11:25:45.110" level="INFO">Clicking element 'id=open-menu-button'.</msg>
-<msg timestamp="20161026 11:25:45.110" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/elements {"using": "id", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "open-menu-button"}</msg>
-<msg timestamp="20161026 11:25:45.126" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:45.126" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-11/click {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-11"}</msg>
-<msg timestamp="20161026 11:25:45.188" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:45.692" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element {"using": "tag name", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "html"}</msg>
-<msg timestamp="20161026 11:25:45.699" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:45.699" level="DEBUG">GET http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-1/enabled {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-1"}</msg>
-<msg timestamp="20161026 11:25:45.705" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:45.705" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/execute_async {"sessionId": "99903d77079ebdac271c5b3582c405fe", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(true)})}else{cb(false)}"}</msg>
-<msg timestamp="20161026 11:25:45.817" level="DEBUG">Finished Request</msg>
-<status status="PASS" endtime="20161026 11:25:45.817" starttime="20161026 11:25:45.109"></status>
+<msg timestamp="20161026 17:14:44.644" level="INFO">Clicking element 'id=open-menu-button'.</msg>
+<msg timestamp="20161026 17:14:44.645" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/elements {"using": "id", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "open-menu-button"}</msg>
+<msg timestamp="20161026 17:14:44.664" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:44.665" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-14/click {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-14"}</msg>
+<msg timestamp="20161026 17:14:44.730" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:45.234" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element {"using": "tag name", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "html"}</msg>
+<msg timestamp="20161026 17:14:45.241" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:45.242" level="DEBUG">GET http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-1/enabled {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-1"}</msg>
+<msg timestamp="20161026 17:14:45.246" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:45.246" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/execute_async {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(true)})}else{cb(false)}"}</msg>
+<msg timestamp="20161026 17:14:45.354" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 17:14:45.354" starttime="20161026 17:14:44.644"></status>
 </kw>
-<status status="PASS" endtime="20161026 11:25:45.818" starttime="20161026 11:25:45.109"></status>
+<status status="PASS" endtime="20161026 17:14:45.354" starttime="20161026 17:14:44.644"></status>
 </kw>
 <kw name="When the correct menu selections are made" library="srmLogout">
 <doc>Logout Sequence</doc>
@@ -216,58 +286,58 @@
 <arguments>
 <arg>${srm.select-profile-txt}</arg>
 </arguments>
-<msg timestamp="20161026 11:25:45.820" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/elements {"using": "xpath", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "//*[contains(., 'Users')]"}</msg>
-<msg timestamp="20161026 11:25:45.849" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:45.849" level="INFO">Current page contains text 'Users'.</msg>
-<status status="PASS" endtime="20161026 11:25:45.850" starttime="20161026 11:25:45.819"></status>
+<msg timestamp="20161026 17:14:45.356" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/elements {"using": "xpath", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "//*[contains(., 'Users')]"}</msg>
+<msg timestamp="20161026 17:14:45.375" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:45.376" level="INFO">Current page contains text 'Users'.</msg>
+<status status="PASS" endtime="20161026 17:14:45.376" starttime="20161026 17:14:45.355"></status>
 </kw>
 <kw name="Click Element" library="ExtendedSelenium2Library">
 <doc>Clicks an element identified by ``locator``.</doc>
 <arguments>
 <arg>${srm.select-profile}</arg>
 </arguments>
-<msg timestamp="20161026 11:25:45.850" level="INFO">Clicking element 'id=open-account-menu-button'.</msg>
-<msg timestamp="20161026 11:25:45.850" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/elements {"using": "id", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "open-account-menu-button"}</msg>
-<msg timestamp="20161026 11:25:45.865" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:45.866" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-21/click {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-21"}</msg>
-<msg timestamp="20161026 11:25:45.925" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:46.428" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element {"using": "tag name", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "html"}</msg>
-<msg timestamp="20161026 11:25:46.442" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:46.443" level="DEBUG">GET http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-1/enabled {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-1"}</msg>
-<msg timestamp="20161026 11:25:46.449" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:46.450" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/execute_async {"sessionId": "99903d77079ebdac271c5b3582c405fe", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(true)})}else{cb(false)}"}</msg>
-<msg timestamp="20161026 11:25:46.662" level="DEBUG">Finished Request</msg>
-<status status="PASS" endtime="20161026 11:25:46.663" starttime="20161026 11:25:45.850"></status>
+<msg timestamp="20161026 17:14:45.376" level="INFO">Clicking element 'id=open-account-menu-button'.</msg>
+<msg timestamp="20161026 17:14:45.376" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/elements {"using": "id", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "open-account-menu-button"}</msg>
+<msg timestamp="20161026 17:14:45.390" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:45.390" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-24/click {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-24"}</msg>
+<msg timestamp="20161026 17:14:45.469" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:45.971" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element {"using": "tag name", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "html"}</msg>
+<msg timestamp="20161026 17:14:45.978" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:45.978" level="DEBUG">GET http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-1/enabled {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-1"}</msg>
+<msg timestamp="20161026 17:14:45.982" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:45.982" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/execute_async {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(true)})}else{cb(false)}"}</msg>
+<msg timestamp="20161026 17:14:46.194" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 17:14:46.194" starttime="20161026 17:14:45.376"></status>
 </kw>
 <kw name="Current Frame Contains" library="ExtendedSelenium2Library">
 <doc>Verifies that current frame contains `text`.</doc>
 <arguments>
 <arg>${srm.logout-txt}</arg>
 </arguments>
-<msg timestamp="20161026 11:25:46.663" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/elements {"using": "xpath", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "//*[contains(., 'Logout')]"}</msg>
-<msg timestamp="20161026 11:25:46.685" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:46.686" level="INFO">Current page contains text 'Logout'.</msg>
-<status status="PASS" endtime="20161026 11:25:46.686" starttime="20161026 11:25:46.663"></status>
+<msg timestamp="20161026 17:14:46.195" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/elements {"using": "xpath", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "//*[contains(., 'Logout')]"}</msg>
+<msg timestamp="20161026 17:14:46.217" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:46.217" level="INFO">Current page contains text 'Logout'.</msg>
+<status status="PASS" endtime="20161026 17:14:46.218" starttime="20161026 17:14:46.194"></status>
 </kw>
 <kw name="Click Element" library="ExtendedSelenium2Library">
 <doc>Clicks an element identified by ``locator``.</doc>
 <arguments>
 <arg>${srm.logout}</arg>
 </arguments>
-<msg timestamp="20161026 11:25:46.686" level="INFO">Clicking element 'id=logout-button'.</msg>
-<msg timestamp="20161026 11:25:46.686" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/elements {"using": "id", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "logout-button"}</msg>
-<msg timestamp="20161026 11:25:46.700" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:46.701" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-25/click {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-25"}</msg>
-<msg timestamp="20161026 11:25:46.786" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:47.288" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element {"using": "tag name", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "html"}</msg>
-<msg timestamp="20161026 11:25:47.294" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:47.295" level="DEBUG">GET http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-1/enabled {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-1"}</msg>
-<msg timestamp="20161026 11:25:47.300" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:47.300" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/execute_async {"sessionId": "99903d77079ebdac271c5b3582c405fe", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(true)})}else{cb(false)}"}</msg>
-<msg timestamp="20161026 11:25:47.408" level="DEBUG">Finished Request</msg>
-<status status="PASS" endtime="20161026 11:25:47.408" starttime="20161026 11:25:46.686"></status>
+<msg timestamp="20161026 17:14:46.218" level="INFO">Clicking element 'id=logout-button'.</msg>
+<msg timestamp="20161026 17:14:46.218" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/elements {"using": "id", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "logout-button"}</msg>
+<msg timestamp="20161026 17:14:46.233" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:46.233" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-28/click {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-28"}</msg>
+<msg timestamp="20161026 17:14:46.320" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:46.825" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element {"using": "tag name", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "html"}</msg>
+<msg timestamp="20161026 17:14:46.832" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:46.833" level="DEBUG">GET http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-1/enabled {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-1"}</msg>
+<msg timestamp="20161026 17:14:46.838" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:46.838" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/execute_async {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(true)})}else{cb(false)}"}</msg>
+<msg timestamp="20161026 17:14:46.945" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 17:14:46.946" starttime="20161026 17:14:46.218"></status>
 </kw>
-<status status="PASS" endtime="20161026 11:25:47.408" starttime="20161026 11:25:45.818"></status>
+<status status="PASS" endtime="20161026 17:14:46.946" starttime="20161026 17:14:45.355"></status>
 </kw>
 <kw name="Then the User is logged out of the SRM" library="srmLogout">
 <doc>Verify Landing Page Loaded</doc>
@@ -276,18 +346,18 @@
 <arguments>
 <arg>${srm.page-url}</arg>
 </arguments>
-<msg timestamp="20161026 11:25:47.915" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element {"using": "tag name", "sessionId": "99903d77079ebdac271c5b3582c405fe", "value": "html"}</msg>
-<msg timestamp="20161026 11:25:47.921" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:47.922" level="DEBUG">GET http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/element/0.7598188359094444-1/enabled {"sessionId": "99903d77079ebdac271c5b3582c405fe", "id": "0.7598188359094444-1"}</msg>
-<msg timestamp="20161026 11:25:47.926" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:47.926" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/timeouts/async_script {"sessionId": "99903d77079ebdac271c5b3582c405fe", "ms": 15000.0}</msg>
-<msg timestamp="20161026 11:25:47.928" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:47.929" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/execute_async {"sessionId": "99903d77079ebdac271c5b3582c405fe", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(location.href)})}else{cb(location.href)}"}</msg>
-<msg timestamp="20161026 11:25:47.935" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:47.935" level="DEBUG">POST http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe/timeouts/async_script {"sessionId": "99903d77079ebdac271c5b3582c405fe", "ms": 5000.0}</msg>
-<msg timestamp="20161026 11:25:47.937" level="DEBUG">Finished Request</msg>
-<msg timestamp="20161026 11:25:47.937" level="INFO">Current location contains 'https://eedev.strax.co'.</msg>
-<status status="PASS" endtime="20161026 11:25:47.937" starttime="20161026 11:25:47.409"></status>
+<msg timestamp="20161026 17:14:47.452" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element {"using": "tag name", "sessionId": "1776b1b87731521c6faf8fa402652ebf", "value": "html"}</msg>
+<msg timestamp="20161026 17:14:47.460" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:47.460" level="DEBUG">GET http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/element/0.5950836661791297-1/enabled {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "id": "0.5950836661791297-1"}</msg>
+<msg timestamp="20161026 17:14:47.464" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:47.464" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/timeouts/async_script {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "ms": 15000.0}</msg>
+<msg timestamp="20161026 17:14:47.466" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:47.466" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/execute_async {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "args": [], "script": "if(!window.jQuery){var a=document.getElementsByTagName('head')[0];var b=document.createElement('script');b.type='text/javascript';b.src=document.location.protocol+'//code.jquery.com/jquery-1.11.3.min.js';a.appendChild(b);}var cb=arguments[arguments.length-1];if(window.angular){var $inj;try{$inj=angular.element(document.querySelector('[data-ng-app],[ng-app],.ng-scope')||document).injector()||angular.injector(['ng'])}catch(ex){$inj=angular.injector(['ng'])};$inj.get=$inj.get||$inj;$inj.get('$browser').notifyWhenNoOutstandingRequests(function(){cb(location.href)})}else{cb(location.href)}"}</msg>
+<msg timestamp="20161026 17:14:47.471" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:47.471" level="DEBUG">POST http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf/timeouts/async_script {"sessionId": "1776b1b87731521c6faf8fa402652ebf", "ms": 5000.0}</msg>
+<msg timestamp="20161026 17:14:47.472" level="DEBUG">Finished Request</msg>
+<msg timestamp="20161026 17:14:47.472" level="INFO">Current location contains 'https://eedev.strax.co'.</msg>
+<status status="PASS" endtime="20161026 17:14:47.472" starttime="20161026 17:14:46.946"></status>
 </kw>
 <kw name="Wait 5s" library="srmLogout">
 <doc>Sleep delay</doc>
@@ -296,30 +366,30 @@
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20161026 11:25:52.938" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20161026 11:25:52.938" starttime="20161026 11:25:47.937"></status>
+<msg timestamp="20161026 17:14:52.474" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20161026 17:14:52.474" starttime="20161026 17:14:47.473"></status>
 </kw>
-<status status="PASS" endtime="20161026 11:25:52.938" starttime="20161026 11:25:47.937"></status>
+<status status="PASS" endtime="20161026 17:14:52.475" starttime="20161026 17:14:47.473"></status>
 </kw>
 <kw name="Close Browser" library="ExtendedSelenium2Library">
 <doc>Closes the current browser.</doc>
-<msg timestamp="20161026 11:25:52.939" level="DEBUG">Closing browser with session id 99903d77079ebdac271c5b3582c405fe</msg>
-<msg timestamp="20161026 11:25:52.939" level="DEBUG">DELETE http://127.0.0.1:57135/session/99903d77079ebdac271c5b3582c405fe {"sessionId": "99903d77079ebdac271c5b3582c405fe"}</msg>
-<msg timestamp="20161026 11:25:53.076" level="DEBUG">Finished Request</msg>
-<status status="PASS" endtime="20161026 11:25:53.132" starttime="20161026 11:25:52.939"></status>
+<msg timestamp="20161026 17:14:52.475" level="DEBUG">Closing browser with session id 1776b1b87731521c6faf8fa402652ebf</msg>
+<msg timestamp="20161026 17:14:52.475" level="DEBUG">DELETE http://127.0.0.1:61976/session/1776b1b87731521c6faf8fa402652ebf {"sessionId": "1776b1b87731521c6faf8fa402652ebf"}</msg>
+<msg timestamp="20161026 17:14:52.632" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20161026 17:14:52.657" starttime="20161026 17:14:52.475"></status>
 </kw>
-<status status="PASS" endtime="20161026 11:25:53.133" starttime="20161026 11:25:47.409"></status>
+<status status="PASS" endtime="20161026 17:14:52.657" starttime="20161026 17:14:46.946"></status>
 </kw>
-<status status="PASS" endtime="20161026 11:25:53.135" starttime="20161026 11:25:45.109"></status>
+<status status="PASS" endtime="20161026 17:14:52.658" starttime="20161026 17:14:44.643"></status>
 </kw>
 <doc>Create New Event Sequence for the Strax Response Manager</doc>
 <tags>
 <tag>NewEvent</tag>
 </tags>
-<status status="PASS" endtime="20161026 11:25:53.135" critical="yes" starttime="20161026 11:25:29.035"></status>
+<status status="PASS" endtime="20161026 17:14:52.659" critical="yes" starttime="20161026 17:14:26.629"></status>
 </test>
 <doc>srm web application common page object.</doc>
-<status status="PASS" endtime="20161026 11:25:53.142" starttime="20161026 11:25:28.714"></status>
+<status status="PASS" endtime="20161026 17:14:52.662" starttime="20161026 17:14:26.475"></status>
 </suite>
 <statistics>
 <total>
