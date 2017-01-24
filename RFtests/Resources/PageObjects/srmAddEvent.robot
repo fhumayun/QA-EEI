@@ -4,9 +4,9 @@ Library  ExtendedSelenium2Library
 
 *** Variables ***
 #New Event Creation Sequence
-${srm.page_url}               https://eedev.strax.co/#/event/active
+${srm.page_url}               https://qa-srm.strax.co/#/event/active
 ${srm.addcircleoutline}       id=add-button
-${srm.new_event_page_url}     https://eedev.strax.co/#/event/add
+${srm.new_event_page_url}     https://qa-srm.strax.co/#/event/add
 ${srm.field_validation_key}   id=referenceId
 
 *** Keywords ***

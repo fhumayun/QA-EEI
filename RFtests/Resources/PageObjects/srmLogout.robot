@@ -11,7 +11,7 @@ ${srm.select-profile}         id=open-account-menu-button
 ${srm.select-profile-txt}     Users
 ${srm.logout}                 id=logout-button
 ${srm.logout-txt}             Logout
-${srm.page-url}               https://eedev.strax.co
+${srm.page-url}               https://qa-srm.strax.co
 
 *** Keywords ***
 Wait Until Angular Ready

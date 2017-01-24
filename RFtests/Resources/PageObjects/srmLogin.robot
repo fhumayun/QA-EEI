@@ -7,9 +7,9 @@ Library  ExtendedSelenium2Library
 ${srm.email}                  id=user-email
 ${srm.login}                  id=login-button
 ${srm.page_loaded_text}       561-894-9865
-${srm.page_url}               https://eedev.strax.co
+${srm.page_url}               https://qa-srm.strax.co
 ${srm.password}               id=user-password
-${srm.email}                  fhumayun@eagleeye.io
+${srm.email}                  faisal@ee.io
 
 *** Keywords ***
 Start SRM Login
