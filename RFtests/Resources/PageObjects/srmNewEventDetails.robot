@@ -35,7 +35,8 @@ Click Accountcircle Faisal Humayun Button
     Click Button  ${new-srm-event.accountcircle_faisal_humayun}
 
 Click Cancel Button
-    [Documentation]  Click on Cancel Button.
+    [Documentation]  Click on Cancel Button.y
+
     Click Button  ${new-srm-event.cancel}
 
 Click Close Button
