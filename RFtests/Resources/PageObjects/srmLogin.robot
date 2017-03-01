@@ -1,15 +1,7 @@
 *** Settings ***
 Documentation  srm domain specific keyword definitions
 Library  ExtendedSelenium2Library
-
-*** Variables ***
-# Basic UI Validation Page Objects
-${srm.email}                  id=user-email
-${srm.login}                  id=login-button
-${srm.page_loaded_text}       561-894-9865
-${srm.page_url}               https://qa-srm.strax.co
-${srm.password}               id=user-password
-${srm.email}                  faisal@ee.io
+Resource  ./Resources/PageObjects/set.robot
 
 *** Keywords ***
 Start SRM Login
