@@ -5,7 +5,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 3.0.1 (Python 2.7.10 on darwin)" name="Generator">
+<meta content="Robot Framework 3.0 (Python 2.7.10 on darwin)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAJEBoACtnfgA5cYYAERsiAEx2lAAbKkQAcazBACZCVwAcM1cAK0ucAAMDBQAnQncASG+FABkoVQAyWmgA6f8SgvH/Ij99+GLyIinyJfn/Yi//KSLzUy9iZogpIld3/4JVVTkid7vyUjNVNVJEAGOZ6Z7pXwAABpmZkRiLAAAGiJZpmGAAAEEt3SXdxAAATC7o/u3EAAC8MRZpjasAAAY1VVVTYAAABKqqqqpAAAAADKqq4AAAAAAAv4sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMADAADgAwAA4AcAAOAHAADgBwAAwAcAAOAHAADgDwAA8A8AAPg/AAD+fwAA">
 <style media="all" type="text/css">
 /* Generic and misc styles */
@@ -516,7 +516,7 @@ a:link, a:visited {
 .doc pre {
     font-size: 1.1em;
     letter-spacing: 0.05em;
-    background: #f4f4f4;
+    background: #eee;
 }
 .doc code {
     padding: 0 0.2em;
@@ -1020,16 +1020,8 @@ window.util = function () {
         var base = window.output ? window.output.baseMillis : 0;
         return new Date(base + millis);
     }
-    function createGeneratedString(timestamp) {
-        var date = new Date(timestamp);
-        var dt = dateTimeFromDate(date).slice(0, 17);  // drop millis
-        var offset = date.getTimezoneOffset();
-        var sign = offset > 0 ? '-' : '+';
-        var hours = Math.floor(Math.abs(offset) / 60);
-        var mins = Math.abs(offset) % 60;
-        return dt + ' GMT' + sign + padTo(hours, 2) + ':' + padTo(mins, 2);
-    }
-    function createGeneratedAgoString(timestamp) {
+    function createGeneratedAgoString(generatedMillis) {
+        generatedMillis = timestamp(generatedMillis);
         function timeString(time, shortUnit) {
             var unit = {y: 'year', d: 'day', h: 'hour', m: 'minute',
                         s: 'second'}[shortUnit];
@@ -1040,7 +1032,7 @@ window.util = function () {
             // Not a perfect algorithm but ought to be enough
             return days - Math.floor(years / 4);
         }
-        var generated = Math.round(timestamp / 1000);
+        var generated = Math.round(generatedMillis / 1000);
         var current = Math.round(new Date().getTime() / 1000);
         var elapsed = current - generated;
         var prefix = '';
@@ -1099,7 +1091,6 @@ window.util = function () {
         dateTimeFromDate: dateTimeFromDate,
         formatElapsed: formatElapsed,
         timestamp: timestamp,
-        createGeneratedString: createGeneratedString,
         createGeneratedAgoString: createGeneratedAgoString,
         parseQueryString: parseQueryString
     };
@@ -1400,7 +1391,6 @@ function setTitle(suiteName, type) {
     document.title = util.unescape(title);
 }
 function addHeader() {
-    var generated = util.timestamp(window.output.generated);
     $.tmpl('<h1>${title}</h1>' +
            '<div id="generated">' +
              '<span>Generated<br>${generated}</span><br>' +
@@ -1409,8 +1399,8 @@ function addHeader() {
            '<div id="top-right-header">' +
              '<div id="report-or-log-link"><a href="#"></a></div>' +
            '</div>', {
-        generated: util.createGeneratedString(generated),
-        ago: util.createGeneratedAgoString(generated),
+        generated: window.output.generatedTimestamp,
+        ago: util.createGeneratedAgoString(window.output.generatedMillis),
         title: document.title
     }).appendTo($('#header'));
 }
@@ -1567,22 +1557,25 @@ storage = function () {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,4,[],[0,0,30264],[],[[5,0,1,6,[7],[0,99,30163,8],[]]],[],[1,0,1,0]];
+window.output["suite"] = [1,2,3,0,[],[0,0,90114],[],[[4,0,1,0,[5],[0,295,89817,6],[]]],[],[1,0,1,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*testRobot","*/Users/jshanahan/Prog/qa-eei/RFtests/testRobot.robot","*../testRobot.robot","*<p>test to make sure robot framework is behaving.\x3c/p>","*As a Tester I need to make sure robot is working correctly","*<p>Create new test run\x3c/p>","*NewSmokeTest","*WebDriverException: Message: Can not connect to the Service chromedriver\n"]);
+window.output["strings"] = window.output["strings"].concat(["*","*srmAEfromPP","*/Volumes/QA-XS/My Code/QA-EEI/RFtests/Tests/srmAEfromPP.robot","*../Tests/srmAEfromPP.robot","*As a User I need to launch an SAC event from an Event PrePlan","*SACEvent","eNqVkTtrAzEQhPv7FVMEjitsyLMwpDDBnQlHTNKvpfWdiE5rVtI5JuS/R7ZxkTRxyn3M7LfMs+Cd9ztRi51LPQINjHpJOZgeFLCaP4FHDgkblQGtcusp1NhIDnZaVXMfBYlJrewCNuQ821m1KhIlf6yzcoQYk1UPo+q6wRv5zAtV0RkWnoeDvRdDSRS1s4+y5TAp3TxZ55SknLPOIkjCQOnItQefdLEw3DRoqWPEXrK36GlkGAmJXGBb4D4S6tfIGmsUv7NXVd1eSELGlG/TP4juLiBaSic5/UK6/xvJH3WXcTw0eOEofnShw0jqaO1LvFefUYfpthBOsvqv+pxbuf1jpUwO1qesvwFmGcBM"]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:00:30","fail":1,"label":"Critical Tests","pass":0},{"elapsed":"00:00:30","fail":1,"label":"All Tests","pass":0}],[{"elapsed":"00:00:30","fail":1,"label":"NewSmokeTest","pass":0}],[{"elapsed":"00:00:30","fail":1,"id":"s1","label":"testRobot","name":"testRobot","pass":0}]];
+window.output["stats"] = [[{"elapsed":"00:01:30","fail":1,"label":"Critical Tests","pass":0},{"elapsed":"00:01:30","fail":1,"label":"All Tests","pass":0}],[{"elapsed":"00:01:30","fail":1,"label":"SACEvent","pass":0}],[{"elapsed":"00:01:30","fail":1,"id":"s1","label":"srmAEfromPP","name":"srmAEfromPP","pass":0}]];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1485227387285;
+window.output["baseMillis"] = 1488403691878;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 30272;
+window.output["generatedMillis"] = 90122;
+</script>
+<script type="text/javascript">
+window.output["generatedTimestamp"] = "20170301 16:29:42 GMT -04:00";
 </script>
 <script type="text/javascript">
 window.settings = {"background":{"fail":"#f66","nonCriticalFail":"#9e9","pass":"#9e9"},"logURL":"log.html","title":""};

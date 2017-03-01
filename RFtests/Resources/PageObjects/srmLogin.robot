@@ -1,9 +1,18 @@
 *** Settings ***
 Documentation  srm domain specific keyword definitions
 Library  ExtendedSelenium2Library
-Resource  ./Resources/PageObjects/set.robot
+Resource  set.robot
 
 *** Keywords ***
+Start SRM session
+    [Documentation]  Configuring WebDriver and Setup
+    Open Browser  ${srm.page_url}  ${srm.browser}
+    Delete All Cookies
+
+Wait a moment
+    [Documentation]  Sleep delay
+    Sleep  5s
+
 Start SRM Login
     Given a User loads the SRM Page
     When User Supplies Valid Credentials
@@ -30,11 +39,11 @@ When User Supplies Valid Credentials
 
 And Email Field is set correctly
     [Documentation]  Set value to Email Email field.
-    Input Text  ${srm.email}  fhumayun@eagleeye.io
+    Input Text  ${srm.email_id}  ${srm.email_input}
 
 And Password Field is set correctly
     [Documentation]  Set value to Password Password field.
-    Input Text  ${srm.password}  careteam
+    Input Text  ${srm.password_id}  ${srm.password_input}
 
 And Login Button is Clicked
     [Documentation]  Click on Login Button.
