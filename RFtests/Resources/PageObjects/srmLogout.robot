@@ -31,6 +31,6 @@ When the correct menu selections are made
 
 Then the User is logged out of the SRM
     [Documentation]  Verify Landing Page Loaded
-    Location Should Contain  ${srm.page-url}
+    Location Should Contain  ${srm.page_url}
     Wait 5s
     close browser

@@ -20,6 +20,9 @@ ${srm.addcircleoutline}       id=add-button
 ${srm.new_event_page_url}     https://qa-srm.strax.co/#/event/add
 ${srm.field_validation_key}   id=referenceId
 
+${srm.active-event-page_url}  https://qa-srm.strax.co/#/event/active
+${srm.active-event-aefromep}  id=event-link-0
+
 #Logout Sequence
 ${srm.menu-button}            id=open-menu-button
 ${srm.select-profile}         id=open-account-menu-button

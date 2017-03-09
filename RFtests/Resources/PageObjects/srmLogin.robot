@@ -1,6 +1,5 @@
 *** Settings ***
 Documentation  srm domain specific keyword definitions
-Library  ExtendedSelenium2Library
 Resource  set.robot
 
 *** Keywords ***
