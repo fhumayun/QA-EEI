@@ -1,0 +1,10 @@
+[loadbalancer]
+lb01
+[webserver]
+qa-srm
+qa-sac
+qa-pb
+[database]
+qa-db
+[control]
+control
